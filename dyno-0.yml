@@ -1,0 +1,18 @@
+dyn_o_mite:
+  datacenter: 'vagrant_dc_a'
+  rack: 'dyno-0'
+  dyn_listen: 0.0.0.0:8101
+  dyn_seeds:
+  - 192.168.56.32:8101:dyno-1:vagrant_dc_b:eMz4FpVCcpO4ChGN 
+  listen: 0.0.0.0:8102
+  servers:
+  - 127.0.0.1:6379:1
+  tokens: ghxl7xxzcFKx8y3J
+  secure_server_option: datacenter
+  data_store: 0
+  pem_key_file: /etc/dynomite/conf/dynomite.pem
+  stats_listen: 127.0.0.1:22222
+  mbuf_size: 2048
+  max_msgs: 100000
+  read_consistency: DC_ONE
+  write_consistency: DC_ONE
